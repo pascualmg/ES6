@@ -52,11 +52,18 @@ PERSONA.hablar = window.diToloquesepas;
 PERSONA.hablar();
 
 
-let nombre = "Roberto";
+let numero = 10;
 
-if ( nombre === "Roberto" ) {
-    let nombre = "Juan Carlos";
-    console.log(nombre);
+if( true ){
+    let numero = 20;
+
+    while(true){
+        let numero = 30;
+        for(let numero = 1; numero < 10; numero ++){
+            numero = numero;
+        } break;
+    }
 }
 
-console.log(nombre);
+console.log(numero);
+
