@@ -67,3 +67,35 @@ if( true ){
 
 console.log(numero);
 
+
+//template literals
+
+let articulo = ["el", "la", "un", "una", ];
+let sujeto = ["niño", "perro", "viejo", "gay" ];
+let verbo = ["salta", "corre", "caga", "juega"];
+
+function getrandIndex(min = 0,max = 3)
+{
+
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+
+function etiqueta (literales , ...sustituciones)
+{
+    console.log(literales);
+    console.log(sustituciones);
+
+    for (i = 0 ; i< sustituciones.length; )
+}
+function difraseRandom(){
+
+    let template = etiqueta`${articulo[getrandIndex(0,3)]} jugoso ${sujeto[getrandIndex(0,3)]} ${verbo[getrandIndex(0,3)]} raudo`;
+
+    console.log(template);
+}
+
+
+PERSONA.hablar = window.difraseRandom;
+
+PERSONA.hablar();
