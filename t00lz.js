@@ -19,10 +19,19 @@ function log(val = "")
 
     console.log(val);
 
+
+
     textArea = document.getElementById('textArea4log');
+    if (val === ""){
+        textArea.value = "";
+    }
+
     textArea.value += '\n';
+
     textArea.value += val;
 
     ponGuayElTextArea(textArea);
+
+    textArea.onkeydown = function (){console.log(`pulsada key`)};
 
 }
