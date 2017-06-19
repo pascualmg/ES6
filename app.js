@@ -1,18 +1,25 @@
-//
+//funciones de flecha SPEAR FUNCS ECMA6
 log();
 
-function Persona(name) {
-
-    if (typeof new.target === 'undefined')
-    {
-
-    }
-    this.nombre = name;
+function normalFunction(paramA, paramB) {
+    return paramA + paramB;
 }
 
-var persona = new Persona("alfonsa");
-var nopersona = Persona("alfonso");
+let arrowFunction = (paramA, paramB) => {paramA + paramB};
+let saludar = (persona) => `Hola ${persona}`;
 
-log("algo");
-log(persona);
-log(nopersona);
+let getLibro = function(id) {
+    return {
+        id: id,
+        titulo: "harry potter"
+    }
+}(5);
+let getLibroArrow = id => ({id: id, titulo: "harry Potter"});
+
+
+
+
+log(normalFunction(2,3));
+log(arrowFunction(2,3));
+
+
